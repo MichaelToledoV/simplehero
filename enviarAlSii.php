@@ -40,7 +40,7 @@
 ','files'=> $certificado, $caf)));
 
 $headers = array();
-$headers[] = 'Authorization: Basic YXBpOjIxMTctVzcwMC02MzgyLTcxNzUtOTkwNg==';
+$headers[] = 'Authorization: Basic '.$apikey;
 curl_setopt($curl, CURLOPT_HTTPHEADER, $headers);
 
 $response = curl_exec($curl);
