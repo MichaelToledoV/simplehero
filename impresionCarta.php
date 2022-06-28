@@ -21,7 +21,7 @@ curl_setopt_array($curl, array(
 }','fileEnvio'=> $caf)));
 
 	$headers = array();
-	$headers[] = 'Authorization: Basic YXBpOjIxMTctVzcwMC02MzgyLTcxNzUtOTkwNg==';
+	$headers[] = 'Authorization: Basic '.$apikey;
 	curl_setopt($curl, CURLOPT_HTTPHEADER, $headers);
 	$response = curl_exec($curl);
 	$err_status = curl_error($curl);
