@@ -266,8 +266,9 @@ $post = array('input' => $datosArray ,'files'=> $certificado, $caf);
 
 curl_setopt($curl, CURLOPT_POSTFIELDS, $post);
 
+$apikey = "YXBpOjM1NzYtTjk3MC02MzgyLTY4MzEtOTczNA==";
 $headers = array();
-$headers[] = 'Authorization: Basic YXBpOjIxMTctVzcwMC02MzgyLTcxNzUtOTkwNg==';
+$headers[] = 'Authorization: Basic '.$apikey;
 curl_setopt($curl, CURLOPT_HTTPHEADER, $headers);
 
 // $result = curl_exec($curl);
